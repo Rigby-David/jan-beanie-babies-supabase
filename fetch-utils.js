@@ -5,7 +5,15 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getBeanieBabies() {
-    let query = client.from('beanie_babies').select('*');
+    let query = client.from('beanie_babies').select('*').limit(100);
+
+    const response = await query;
+
+    return response;
+}
+
+export async function getBeanieThemes() {
+    let query = client.from('beanie_baby_themes').select('*');
 
     const response = await query;
 

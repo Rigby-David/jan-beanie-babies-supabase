@@ -25,3 +25,12 @@ export function renderBabies(beanie) {
 
     return li;
 }
+
+export function renderOptions(beanie) {
+    const option = document.createElement('option');
+
+    option.value = beanie.name;
+    option.textContent = beanie.name;
+
+    return option;
+}
