@@ -33,3 +33,26 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.beanie-baby-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 140px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+    width: 150px;
+}
+
+.attributes {
+    display: flex;
+    flex-direction: column;
+}
